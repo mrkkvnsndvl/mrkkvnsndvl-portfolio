@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
 
-import { projectDesktop } from '@/src/_lib/project-desktop-lib';
+import { projectDesktop } from '@/_lib/project-desktop-lib';
 
 export default function ProjectDesktop() {
   const [showImage, setShowImage] = useState<number | null>(null);

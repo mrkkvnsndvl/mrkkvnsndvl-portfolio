@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { links } from '@/src/_lib/link-lib';
+import { links } from '@/_lib/link-lib';
 import { IconArrowNarrowRight } from '@tabler/icons-react';
 
 export default function Navbar() {

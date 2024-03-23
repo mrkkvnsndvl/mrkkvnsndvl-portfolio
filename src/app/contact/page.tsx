@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import Navbar from '@/src/components/navbar';
-import { TransitionProvider } from '@/src/contexts/transition-context';
+import Navbar from '@/components/navbar';
+import { TransitionProvider } from '@/contexts/transition-context';
 
 export const metadata: Metadata = {
   title: 'Contact — markkevsandoval',

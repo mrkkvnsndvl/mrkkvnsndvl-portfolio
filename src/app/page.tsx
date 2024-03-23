@@ -1,8 +1,8 @@
-import Navbar from '@/src/components/navbar';
-import ProjectDeskop from '@/src/components/project-desktop';
-import ProjectMobile from '@/src/components/project-mobile';
-import ProjectSlider from '@/src/components/project-slider';
-import { TransitionProvider } from '@/src/contexts/transition-context';
+import Navbar from '@/components/navbar';
+import ProjectDeskop from '@/components/project-desktop';
+import ProjectMobile from '@/components/project-mobile';
+import ProjectSlider from '@/components/project-slider';
+import { TransitionProvider } from '@/contexts/transition-context';
 
 export default function Index() {
   return (

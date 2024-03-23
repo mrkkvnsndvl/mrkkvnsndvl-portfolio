@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import React from 'react';
 
-import { education } from '@/src/_lib/education-lib';
-import { skills } from '@/src/_lib/skills-lib';
-import Navbar from '@/src/components/navbar';
-import { TransitionProvider } from '@/src/contexts/transition-context';
+import { education } from '@/_lib/education-lib';
+import { skills } from '@/_lib/skills-lib';
+import Navbar from '@/components/navbar';
+import { TransitionProvider } from '@/contexts/transition-context';
 import { IconArrowNarrowDown } from '@tabler/icons-react';
 
 export const metadata: Metadata = {

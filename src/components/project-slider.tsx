@@ -5,7 +5,7 @@ import '@splidejs/react-splide/css/core';
 import Link from 'next/link';
 import { useState } from 'react';
 
-import { projectSlider } from '@/src/_lib/project-slider-lib';
+import { projectSlider } from '@/_lib/project-slider-lib';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from '@tabler/icons-react';
 

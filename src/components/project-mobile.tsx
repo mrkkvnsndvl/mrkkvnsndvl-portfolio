@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 
-import { projectMobile } from '@/src/_lib/project-mobile-lib';
+import { projectMobile } from '@/_lib/project-mobile-lib';
 import { IconArrowRight } from '@tabler/icons-react';
 
 const ProjectMobile = memo(() => {
