@@ -26,7 +26,7 @@ export default function About() {
               className='w-auto h-auto'
               width={600}
               height={600}
-              src='/webps/markkevsandoval.webp'
+              src='./webps/markkevsandoval.webp'
               alt="It's me"
               loading='lazy'
               unoptimized={true}
@@ -39,7 +39,7 @@ export default function About() {
             <div className='flex items-center w-full gap-x-8'>
               <a
                 className='flex items-center'
-                href='/jpgs/markkevsandoval.jpg'
+                href='./jpgs/markkevsandoval.jpg'
                 download='markkevsandoval'>
                 <IconArrowNarrowDown
                   className='w-8 h-8 lg:w-10 lg:h-10'
@@ -51,7 +51,7 @@ export default function About() {
               </a>
               <a
                 className='flex items-center'
-                href='/pdfs/markkevsandoval-CV.pdf'
+                href='./pdfs/markkevsandoval-CV.pdf'
                 download='markkevsandoval-CV'>
                 <IconArrowNarrowDown
                   className='w-8 h-8 lg:w-10 lg:h-10'
@@ -132,7 +132,7 @@ export default function About() {
             className='object-contain w-auto h-full aspect-sqaure'
             width={600}
             height={600}
-            src='/webps/markkevsandoval.webp'
+            src='./webps/markkevsandoval.webp'
             alt="It's me"
             loading='lazy'
             unoptimized={true}

@@ -40,7 +40,7 @@ export default function Contact() {
             className='object-cover w-auto h-auto'
             width={4000}
             height={4000}
-            src='/webps/map-classic.webp'
+            src='./webps/map-classic.webp'
             alt='Map'
             priority={true}
           />
@@ -50,7 +50,7 @@ export default function Contact() {
             className='object-cover w-full h-full'
             width={4000}
             height={4000}
-            src='/webps/map-classic.webp'
+            src='./webps/map-classic.webp'
             alt='Map'
             priority={true}
           />
