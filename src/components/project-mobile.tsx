@@ -35,34 +35,6 @@ const ProjectMobile = memo(() => {
     }
   }, [openProjectId]);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (openProjectId !== null) {
-  //       const el = bottomRef.current;
-  //       if (el) {
-  //         el.scrollIntoView({ behavior: 'smooth', block: 'end' });
-  //       }
-  //     }
-  //   };
-
-  //   const debounceScroll = () => {
-  //     clearTimeout(scrollTimeout);
-  //     scrollTimeout = setTimeout(handleScroll, 100);
-  //   };
-
-  //   let scrollTimeout: ReturnType<typeof setTimeout>;
-  //   if (openProjectId !== null) {
-  //     window.addEventListener('scroll', debounceScroll);
-  //   }
-
-  //   handleScroll();
-
-  //   return () => {
-  //     clearTimeout(scrollTimeout);
-  //     window.removeEventListener('scroll', debounceScroll);
-  //   };
-  // }, [openProjectId]);
-
   const projectMobileVariants = {
     initial: {
       opacity: 0,

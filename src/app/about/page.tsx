@@ -39,7 +39,7 @@ export default function About() {
             <div className='flex items-center w-full gap-x-8'>
               <a
                 className='flex items-center'
-                href='jpgs/markkevsandoval.jpg'
+                href='/jpgs/markkevsandoval.jpg'
                 download='markkevsandoval'>
                 <IconArrowNarrowDown
                   className='w-8 h-8 lg:w-10 lg:h-10'
@@ -51,7 +51,7 @@ export default function About() {
               </a>
               <a
                 className='flex items-center'
-                href='pdfs/markkevsandoval-CV.pdf'
+                href='/pdfs/markkevsandoval-CV.pdf'
                 download='markkevsandoval-CV'>
                 <IconArrowNarrowDown
                   className='w-8 h-8 lg:w-10 lg:h-10'

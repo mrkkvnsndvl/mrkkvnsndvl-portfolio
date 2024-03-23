@@ -2,6 +2,7 @@
 
 import 'lazysizes';
 
+import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
@@ -24,15 +25,21 @@ export default function ProjectDesktop() {
           Project
         </span>
         <span
-          className={`py-3 uppercase border-b text-end text-15px text-gray border-b-black ${
-            project_contrast ? 'border-b-white text-white ' : ''
-          }}`}>
+          className={clsx(
+            'py-3 uppercase border-b text-end text-15px text-gray border-b-black',
+            {
+              'border-b-white text-white': project_contrast,
+            },
+          )}>
           Type
         </span>
         <span
-          className={`py-3 uppercase border-b text-end text-15px text-gray border-b-black ${
-            project_contrast ? 'border-b-white text-white ' : ''
-          }}`}>
+          className={clsx(
+            'py-3 uppercase border-b text-end text-15px text-gray border-b-black',
+            {
+              'border-b-white text-white': project_contrast,
+            },
+          )}>
           Created At
         </span>
       </header>
@@ -57,15 +64,21 @@ export default function ProjectDesktop() {
               {project_title}
             </span>
             <span
-              className={`py-3 border-b border-b-black text-end text-20px ${
-                project_contrast ? 'border-b-white text-white ' : ''
-              }}`}>
+              className={clsx(
+                'py-3 border-b border-b-black text-end text-20px',
+                {
+                  'border-b-white text-white': project_contrast,
+                },
+              )}>
               {project_type}
             </span>
             <span
-              className={`py-3 border-b border-b-black text-end text-20px ${
-                project_contrast ? 'border-b-white text-white ' : ''
-              }}`}>
+              className={clsx(
+                'py-3 border-b border-b-black text-end text-20px',
+                {
+                  'border-b-white text-white': project_contrast,
+                },
+              )}>
               {project_created_at}
             </span>
             {showImage === project_id && (
