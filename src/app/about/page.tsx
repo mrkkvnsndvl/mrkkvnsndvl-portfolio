@@ -9,7 +9,7 @@ import { TransitionProvider } from '@/contexts/transition-context';
 import { IconArrowNarrowDown } from '@tabler/icons-react';
 
 export const metadata: Metadata = {
-  title: 'About — markkevsandoval',
+  title: 'About — mrkkvnsndvl',
   description: "It's time to know me.",
 };
 
@@ -26,7 +26,7 @@ export default function About() {
               className='w-auto h-auto'
               width={600}
               height={600}
-              src='./webps/markkevsandoval.webp'
+              src='./webps/mrkkvnsndvl.webp'
               alt="It's me"
               loading='lazy'
               unoptimized={true}
@@ -39,8 +39,8 @@ export default function About() {
             <div className='flex items-center w-full gap-x-8'>
               <a
                 className='flex items-center'
-                href='./jpgs/markkevsandoval.jpg'
-                download='markkevsandoval'>
+                href='./jpgs/mrkkvnsndvl.jpg'
+                download='mrkkvnsndvl'>
                 <IconArrowNarrowDown
                   className='w-8 h-8 lg:w-10 lg:h-10'
                   stroke={1}
@@ -51,8 +51,8 @@ export default function About() {
               </a>
               <a
                 className='flex items-center'
-                href='./pdfs/markkevsandoval-CV.pdf'
-                download='markkevsandoval-CV'>
+                href='./pdfs/mrkkvnsndvl-cv.pdf'
+                download='mrkkvnsndvl-cv'>
                 <IconArrowNarrowDown
                   className='w-8 h-8 lg:w-10 lg:h-10'
                   stroke={1}
@@ -132,7 +132,7 @@ export default function About() {
             className='object-contain w-auto h-full aspect-sqaure'
             width={600}
             height={600}
-            src='./webps/markkevsandoval.webp'
+            src='./webps/mrkkvnsndvl.webp'
             alt="It's me"
             loading='lazy'
             unoptimized={true}

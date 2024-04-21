@@ -7,7 +7,7 @@ import Navbar from '@/components/navbar';
 import { TransitionProvider } from '@/contexts/transition-context';
 
 export const metadata: Metadata = {
-  title: 'Contact — markkevsandoval',
+  title: 'Contact — mrkkvnsndvl',
   description: "Let's talk if you have any questions.",
 };
 

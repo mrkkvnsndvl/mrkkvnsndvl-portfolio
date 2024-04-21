@@ -10,8 +10,8 @@ const myFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'markkevsandoval',
-  description: 'markkevsandoval portfolio',
+  title: 'mrkkvnsndvl',
+  description: 'mrkkvnsndvl portfolio',
 };
 
 export default function RootLayout({
