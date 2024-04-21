@@ -66,64 +66,68 @@ const ProjectMobile = memo(() => {
           Type
         </span>
       </header>
-      {projectMobile.toReversed().map(
-        ({
-          project_id,
-          project_image,
-          project_image_alt,
-          project_title,
-          project_type,
-          project_created_at,
-          project_link,
-        }) => {
-          return (
-            <article
-              className='grid items-center grid-cols-2 border-b border-b-black'
-              onClick={() => handleClickList(project_id)}
-              key={project_id}>
-              <span className='py-3 transition-colors text-15px md:text-20px'>
-                {project_title}
-              </span>
-              <span className='py-3 text-end text-15px md:text-20px'>
-                {project_type}
-              </span>
-              <AnimatePresence>
-                {openProjectId === project_id && (
-                  <motion.div
-                    className='h-auto col-span-2'
-                    variants={projectMobileVariants}
-                    initial='initial'
-                    animate='animate'
-                    exit='exit'
-                    ref={bottomRef}>
-                    <Image
-                      className='block w-full h-auto'
-                      width={1080}
-                      height={1080}
-                      src={project_image}
-                      alt={project_image_alt}
-                      loading='lazy'
-                    />
-                    <div className='flex flex-row-reverse items-center justify-between w-full'>
-                      <Link
-                        className='flex items-center justify-end py-4 text-15px'
-                        href={project_link}
-                        target='_blank'
-                        rel='noopener noreferrer'>
-                        Open Project
-                        <IconArrowRight className='w-5 h-5' stroke={1} />
-                      </Link>
-                      <time className='text-15px' dateTime={project_created_at}>
-                        {project_created_at}
-                      </time>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </article>
-          );
-        },
-      )}
+      {[...projectMobile]
+        .reverse()
+        .map(
+          ({
+            project_id,
+            project_image,
+            project_image_alt,
+            project_title,
+            project_type,
+            project_created_at,
+            project_link,
+          }) => {
+            return (
+              <article
+                className='grid items-center grid-cols-2 border-b border-b-black'
+                onClick={() => handleClickList(project_id)}
+                key={project_id}>
+                <span className='py-3 transition-colors text-15px md:text-20px'>
+                  {project_title}
+                </span>
+                <span className='py-3 text-end text-15px md:text-20px'>
+                  {project_type}
+                </span>
+                <AnimatePresence>
+                  {openProjectId === project_id && (
+                    <motion.div
+                      className='h-auto col-span-2'
+                      variants={projectMobileVariants}
+                      initial='initial'
+                      animate='animate'
+                      exit='exit'
+                      ref={bottomRef}>
+                      <Image
+                        className='block w-full h-auto'
+                        width={1080}
+                        height={1080}
+                        src={project_image}
+                        alt={project_image_alt}
+                        loading='lazy'
+                      />
+                      <div className='flex flex-row-reverse items-center justify-between w-full'>
+                        <Link
+                          className='flex items-center justify-end py-4 text-15px'
+                          href={project_link}
+                          target='_blank'
+                          rel='noopener noreferrer'>
+                          Open Project
+                          <IconArrowRight className='w-5 h-5' stroke={1} />
+                        </Link>
+                        <time
+                          className='text-15px'
+                          dateTime={project_created_at}>
+                          {project_created_at}
+                        </time>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </article>
+            );
+          },
+        )}
     </section>
   );
 });
