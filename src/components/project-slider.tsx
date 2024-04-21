@@ -44,7 +44,7 @@ export default function ProjectSlider() {
             type: 'loop',
           }}>
           <SplideTrack className='h-full xl:h-auto'>
-            {projectSlider.map(({ slider_id, slider_webm }) => (
+            {projectSlider.toReversed().map(({ slider_id, slider_webm }) => (
               <SplideSlide className='h-full xl:h-auto' key={slider_id}>
                 <video
                   className='block object-cover h-full cursor-grab'
@@ -85,11 +85,11 @@ export default function ProjectSlider() {
             </div>
             <div className='col-span-2'>
               <span className='text-15px'>
-                {projectSlider[activeIndex].slider_project_title}
+                {projectSlider[projectSlider.length - 1 - activeIndex].slider_project_title}
               </span>
               <Link
                 className='flex items-center text-15px'
-                href={projectSlider[activeIndex].slider_project_link}
+                href={projectSlider[projectSlider.length - 1 - activeIndex].slider_project_link}
                 target='_blank'>
                 <IconArrowNarrowRight className='w-6 h-6' stroke={1} />
                 Open Project

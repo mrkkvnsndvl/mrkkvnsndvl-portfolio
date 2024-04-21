@@ -66,7 +66,7 @@ const ProjectMobile = memo(() => {
           Type
         </span>
       </header>
-      {projectMobile.map(
+      {projectMobile.toReversed().map(
         ({
           project_id,
           project_image,

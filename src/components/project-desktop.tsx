@@ -43,7 +43,7 @@ export default function ProjectDesktop() {
           Created At
         </span>
       </header>
-      {projectDesktop.map(
+      {projectDesktop.toReversed().map(
         ({
           project_id,
           project_image,
