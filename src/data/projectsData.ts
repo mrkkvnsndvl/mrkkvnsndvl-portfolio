@@ -55,7 +55,7 @@ export const projectsData: Project[] = [
     title: "Cyber Quest",
     description:
       "Cyber Quest is my capstone project, designed to introduce you to fundamental cybersecurity challenges. Through interactive experiences, you'll gain hands-on knowledge and a foundational understanding of security concepts at the cutting edge of the field.",
-    technologies: ["CSharo", "Unity Editor", "Unity Scripts", "Unity 2D"],
+    technologies: ["C#", "Unity Editor", "Unity Scripts", "Unity 2D"],
     category: "Game",
     featured: true,
     date: "2024-12-20",
