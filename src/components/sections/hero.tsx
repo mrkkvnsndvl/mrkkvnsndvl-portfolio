@@ -37,8 +37,8 @@ export function Hero() {
         <img
           src={
             useTheme().theme === "dark"
-              ? "/src/assets/svgs/dark-mrkkvnsndvl.svg"
-              : "/src/assets/svgs/light-mrkkvnsndvl.svg"
+              ? "/dark-mrkkvnsndvl.svg"
+              : "/light-mrkkvnsndvl.svg"
           }
           alt="mrkkvnsndvl"
           draggable={false}
