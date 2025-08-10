@@ -8,7 +8,7 @@ const Header = ({ isLoaded }: { isLoaded: boolean }) => {
           Mark Kevin J. Sandoval
         </h1>
         <p className="text-sm font-medium text-neutral-400">
-          Frontend Developer | Virtual Assistant
+          Software Developer | Virtual Assistant
         </p>
       </header>
     </FadeIn>

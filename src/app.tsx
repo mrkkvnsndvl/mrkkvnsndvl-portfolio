@@ -17,7 +17,7 @@ const App = () => {
   }, []);
 
   return (
-    <main className="relative flex flex-col items-center min-h-screen font-inter bg-white">
+    <main className="relative flex flex-col items-center min-h-screen bg-white font-inter">
       <div
         id="main"
         className="w-full min-h-screen bg-white z-10 px-4 sm:px-6 md:px-8 py-6 sm:py-8 mb-[1500px] transition-all duration-500 ease-in-out shadow-[0_0_20px_rgba(0,0,0,0.1)]"
