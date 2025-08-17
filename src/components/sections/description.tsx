@@ -12,11 +12,12 @@ const Description = ({ isLoaded }: { isLoaded: boolean }) => (
         <em>"Simplicity is the ultimate sophistication."</em> — Leonardo da
         Vinci
       </p>
-      <img
-        src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=kt7tlwuuqptqwn1w8yjaoyrwt&cover_image=true&theme=natemoo-re&show_offline=true&background_color=171717&interchange=true&bar_color=1db954&bar_color_cover=true"
-        alt="Now Playing on Spotify"
-        className="w-72"
-      />
+      <div className="w-full bg-neutral-900">
+        <img
+          src="https://spotify-github-profile.kittinanx.com/api/view?uid=kt7tlwuuqptqwn1w8yjaoyrwt&cover_image=true&theme=natemoo-re&show_offline=true&background_color=ffffff&interchange=false&bar_color=fafafa&bar_color_cover=false"
+          alt="Now Playing on Spotify"
+        />
+      </div>
     </section>
   </FadeIn>
 );
